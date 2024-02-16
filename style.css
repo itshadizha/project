@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3NrOTc5MS1pbWFnZS1rd3Z1amE5Ni5qcGc.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 80px;
+}
+
+.form {
+  background-color: #191c24;
+  display: flex;
+  flex-direction: column;
+  width: 37%;
+  min-height: 500px;
+  margin: 0 auto;
+  border-radius: 5px;
+  padding: 50px;
+}
+
+input {
+  margin-top: 10px;
+  background-color: #2a3038;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+}
+
+input:focus {
+  border: 1px solid green;
+}
+
+label {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.remember {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.forgot-pass {
+  color: blue;
+  font-size: 15px;
+  align-self: self-end;
+}
+
+.forgot-pass:hover{
+    color: #1e6ea0;
+}
+
+
+.remember_me{
+    color: gray;
+    align-self: center;
+}
+
+
+.login {
+  width: 70px;
+  padding: 15px;
+  border-radius: 3px;
+  border: none;
+  background-color: #0090e7;
+  margin: 0 auto;
+  margin-top: 30px;
+  transition: background-color 1s;
+}
+
+.login:hover{
+    background-color: #33a9f1;
+}
+.facebook {
+  background-color: #3b579d;
+  width: 47%;
+  border: none;
+  border-radius: 3px;
+  padding: 8px 0 8px 0;
+  transition: background-color 1s;
+
+}
+
+.facebook:hover{
+    background-color: #384e85;
+}
+.sites {
+  margin-top: 30px;
+}
+
+.google {
+  width: 48%;
+  background-color: #dc4a38;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 0 8px 0;
+  margin-left: 10px;
+  transition: background-color 1s;
+
+}
+
+.google:hover{
+    background-color: #a84033;
+}
+.account{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.sign{
+    font-size: 15px;
+    color: #0090e7;
+}
+
+.google::before{
+    content: url(./Type=google.svg) '+';
+margin-right: 10px;
+}
+
+.facebook::before{
+content: url(./Type=facebook\ \(1\).svg);
+margin-right: 10px;
+}
+
+
+  input[type='checkbox']{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    outline: 2px solid blue;
+    font-size: 0.9em;
+    text-align: center;
+    line-height: 3px;
+    background:#191c24;
+  }
+
+input[type='checkbox']:checked{
+    background-color: blue;
+    outline: none;
+}
+
+  input[type='checkbox']:checked:after {
+    content: '✔';
+    color: black;
+  }
